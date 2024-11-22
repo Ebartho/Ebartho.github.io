@@ -1,0 +1,54 @@
+div{
+
+height: 800px;
+width: 800px;
+
+
+}
+#ruta1{
+height: 300px;
+width: 1900px;
+
+    background-color: blanchedalmond;
+}
+#rutamisc{
+    height: 50px;
+    width: 1920px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#ruta2{
+    height: 250px;
+    width: 1000px;
+    background-color: rgb(59, 169, 94);
+}
+#ruta3{
+    height: 250px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#ruta4{
+    height: 250px;
+    width: 800px;
+    background-color: chocolate;
+}
+
+
+#container{
+
+height: 300px;
+width: 1920px;
+
+
+    display:flex
+
+}
+#ruta5{
+    height: 270px;
+    width: 1900px;
+    background-color: blueviolet;
+}
+
+
+
+
+

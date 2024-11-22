@@ -1,0 +1,21 @@
+div{
+
+height: 800px;
+width: 800px;
+
+
+}
+#ruta1{
+    background-color: blanchedalmond;
+}
+#ruta2{
+    background-color: azure;
+}
+#container{
+    display:flex
+}
+
+
+
+
+
