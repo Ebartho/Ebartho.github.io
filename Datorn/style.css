@@ -1,93 +1,227 @@
-
-body {
-
-height: 100vh;
-width: 100vw;
-margin: 0px;
-background-color: rgb(44, 44, 44);
-
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
 }
-header {
+header{
     grid-area: h;
-    background-color: #dd7575;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 65px;
-    text-align: center;
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    
-}
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 20px;
+    border: 7px solid rgb(72, 13, 90);
 
-
-nav {
-    grid-area: n;
-    background-color: #dd7575;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 50px;
-    text-align: center;
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
 }
-aside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: a;
-    background-color: rgb(44, 44, 44);
-    border-radius: 10px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 301;
-    font-style: normal;
-    margin: 5px;
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.sansation-regular {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
+.red-hat-display {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
+h1{
+    font-size: 75px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    font-size: 45px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;   
+}
+h3{
+    font-size: 25px;
+    margin: 50px;
+    padding: 0px; 
+    text-align: center;  
+}
+h4{
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 0px; 
+    text-align: center;    
+}
+#link{
+    margin-left: 2px;
+    margin-bottom: 1px;
+    font-size: 15px;
+    padding: 0px; 
+    text-align: center; 
+}
+#introduktion{
+    grid-area: i;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 30px;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+
+}
+#selfie{
+    grid-area: s;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 500px;
+    width: 85%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
 }
 main{
     grid-area: m;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 301;
-    font-style: normal;
-    margin: 5px;
-    padding: 15px;
-    font-size: 20px;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    background-color: white;
+    
 }
-footer{
-    grid-area: f;
-    background-color: #dd7575;
-    border-radius: 10px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 301;
-    font-style: normal;
-    margin: 5px;
-    font-size: 30px;
+#section1{
+    grid-area: s1;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 30px;
+    width: 95%;
+    height: 98%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+}
+#section2{
+    grid-area: s2;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 30px;
+    width: 95%;
+    height: 98%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+}
+#section3{
+    grid-area: s3;
+    border: 7px solid rgb(72, 13, 90);
+    border-radius: 30px;
+    width: 95%;
+    height: 98%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+}
+#container1{
+    margin: auto;
+    width: 95%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 80% 20% ;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "h h" 
+        "i s"
+}
+#container2{
+    margin-top: 2%;   
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 95%;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+        "m s1" 
+        "m s2"
+        "m s3" 
+}
+.icons{
+    display: flex;
+    
+}
+@media screen and (max-width:1130px){
+    #container2{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: " m " "s1" "s2 " "s3";
+    height: auto;
+    }
+    #main{
+        height: auto;
+        margin-bottom: auto;
+    }
+    #section1{
+        height: auto;
+    }
+    #section2{
+        height: auto;
+    }
+    #section3{
+        height: auto;
+    }
+    #container1{
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    #container1{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "h " "s" "i";
+        height: auto;
+    }
+    #selfie{
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        
+    }
+}
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat; 
+    margin-top: 17px;  
+    margin-left: 20px;
 }
 
-#wrapper {
-height: 100%;
-width: 100%;
-display: grid;
-grid-template-columns: 45% 55%;
-grid-template-rows: 10% 10% 70% 10%;
+.sprite-icons8-linkedin-24 {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
 
-grid-template-areas: 
+.sprite-icons8-location-24 {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -5px;
+}
 
-"h h"
-"n n"
-"a m"
-"f f"
-}   
+.sprite-icons8-mail-24 {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -39px;
+}
+
+.sprite-icons8-phone-24 {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -39px;
+}
