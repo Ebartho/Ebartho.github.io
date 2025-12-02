@@ -191,7 +191,11 @@ main{
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        object-fit: none;
+        aspect-ratio: auto;
         
     }
 }
