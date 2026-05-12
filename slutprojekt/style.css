@@ -1,0 +1,122 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+#wrapper{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:10% 65% 15% 10%;
+    grid-template-areas: 
+    "header header"
+    "map time"
+    "input ."
+    "footer footer"
+    ;
+    visibility: hidden;
+}
+#ingenJS{
+    position: absolute;
+    left: 25%;
+    bottom: 60%;
+    font-size: xx-large;
+}
+header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    margin-left: 2%;
+}
+aside{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 2px;
+    border-color: black;
+    border-style: solid; */
+    grid-area:map;
+    margin-left: 4%;
+    margin-right: 2%; 
+}
+main{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    /* border-color: black;
+    border-style: solid;
+    grid-area:time;  */
+    margin-left: 2%;
+    margin-right: 4%;  
+    flex-wrap: wrap;  
+}
+#input_wrapper{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 2px;
+    border-color: black;
+    border-style: solid; */
+    grid-area:input; 
+    margin-left: 4%;
+    margin-right: 30%;  
+    flex-wrap: wrap;    
+}
+#lat_input{
+    width: 40%;
+    height: 30%;
+}
+#long_input{
+    width: 40%;
+    height: 30%;
+}
+#button{
+    width: 30%;
+    height: 50%;
+}
+.sprite {
+    background-image: url(img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-sunrise {
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.sprite-sunset {
+    width: 64px;
+    height: 64px;
+    background-position: -64px 0;
+}
+
+
+@media screen and (max-width:1100px){
+
+#wrapper{
+    grid-template-columns: 100%;
+    grid-template-rows:10% 35% 10% 35% 10%;
+    grid-template-areas: 
+    "header"
+    "map"
+    "input"
+    "time"
+    "footer"
+    ;
+}
+
+}
+
