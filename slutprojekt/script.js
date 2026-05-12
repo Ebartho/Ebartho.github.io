@@ -1,13 +1,13 @@
-let sunrise_text = document.getElementById("sunrise_time")
-let sunset_text = document.getElementById("sunset_time")
+let sunrise_text = document.getElementById("sunrise_time");
+let sunset_text = document.getElementById("sunset_time");
 let lat_input = document.getElementById("lat_input");
 let long_input = document.getElementById("long_input");
 let button = document.getElementById("button");
 let sida = document.getElementById("wrapper");
 let latitud;
 let longitud;
-let ingenJS = document.getElementById("ingenJS")
-let h1 = document.getElementById("h1rubrik")
+let ingenJS = document.getElementById("ingenJS");
+let h1 = document.getElementById("h1rubrik");
 
 sida.style.visibility = "visible";
 ingenJS.style.visibility = "hidden";
@@ -18,7 +18,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: 'Map data from <a href="http://www.openstreetmap.org">OpenStreetMap</a>'
 }).addTo(map);  
-var popup = L.popup();
+let popup = L.popup();
 
 /*
 Funktionerna hanterar när användaren klickar på kartan. När kartan klickas på så körs funktionen onMapClick, där lagras latitud och longitud värdena 
@@ -28,7 +28,7 @@ Tillslut så körs funktionen getData som använder de 2 variablerna för att sk
 */
 map.on('click', onMapClick);
 function onMapClick(e) {
-  const { lat, lng } = e.latlng;
+  let { lat, lng } = e.latlng;
     popup
         .setLatLng(e.latlng)
         .setContent("Latitud: " + lat + " <br> Longitud: " + lng)
@@ -65,9 +65,9 @@ async function getData() {
       throw new Error(`Response status: ${response.status}`);
     }
 
-    const result = await response.json();
-    const sunrise = result.results.sunrise;
-    const sunset = result.results.sunset;
+    let result = await response.json();
+    let sunrise = result.results.sunrise;
+    let sunset = result.results.sunset;
     console.log(result);
 
     sunrise_text.innerHTML =sunrise;

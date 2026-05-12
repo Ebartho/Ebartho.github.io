@@ -1,3 +1,28 @@
+.customFont{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 20px;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+#ingress::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 75%;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -90,7 +115,11 @@ main{
     background-repeat: no-repeat;
     display: block;
 }
-
+#logga{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
 .sprite-sunrise {
     width: 64px;
     height: 64px;
@@ -108,7 +137,7 @@ main{
 
 #wrapper{
     grid-template-columns: 100%;
-    grid-template-rows:10% 35% 10% 35% 10%;
+    grid-template-rows:10% 35% 20% 25% 10%;
     grid-template-areas: 
     "header"
     "map"
@@ -117,6 +146,7 @@ main{
     "footer"
     ;
 }
+
 
 }
 
