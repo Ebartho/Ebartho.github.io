@@ -137,7 +137,7 @@ main{
 
 #wrapper{
     grid-template-columns: 100%;
-    grid-template-rows:10% 35% 20% 25% 10%;
+    grid-template-rows:15% 35% 20% 20% 10%;
     grid-template-areas: 
     "header"
     "map"
